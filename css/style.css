@@ -14,17 +14,20 @@ body{
 
 .container{
   width: 80%;
-  margin: 0 auto
+  margin: 20px auto 0px;
 }
 
 /* header */
 
 header{
   width: 100%;
-  /* debug */
-  background-color: #f1f196;
+  color: white;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
+/* prima parte dell'header con img e titolo */
 .header-img{
   background-image: url(../img/default-header.jpg);
   background-size: cover;
@@ -34,11 +37,8 @@ header{
   position: relative;
 }
 .header-img .testo{
-  color: white;
-  text-align: center;
   font-family: 'Montserrat', sans-serif;
   width: 100%;
-
   position: absolute;
   left: 50%;
   top: 50%;
@@ -60,15 +60,41 @@ header{
   font-size: 20px;
   font-weight: bold;
 }
-/* clearfix */
 
+/* seconda parte dell'header - nav */
+
+header > nav *{
+  display: inline-block;
+}
+
+header > nav{
+  background-color: #504741;
+  height: 40px;
+}
+
+header > nav li{
+  line-height: 40px;
+  font-size: 13px;
+  padding: 0px 8px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header > nav li:hover{
+  background-color: rgba(0, 0, 0, .4);
+  cursor: pointer;
+}
+
+
+
+/* blocco centrale */
+
+
+/* clearfix */
 main::after{
   content: "";
   display: table;
   clear: both;
 }
-
-/* blocco centrale */
 
 main{
   margin: 15px 0px 15px;

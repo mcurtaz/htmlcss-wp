@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(../img/default-pattern.png);
+  background-position: left top;
+  background-repeat: repeat;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto
+}
+
+/* header */
+
+header{
+  width: 100%;
+  /* debug */
+  background-color: #f1f196;
+}
+
+.header-img{
+  background-image: url(../img/default-header.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 8px solid white;
+  height: 350px;
+  position: relative;
+}
+.header-img .testo{
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-img h1{
+  display: inline-block;
+  font-weight: 600;
+  font-size: 50px;
+  padding: 2px 8px;
+  border: 2px solid white;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.header-img span{
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* clearfix */
+
+main::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* blocco centrale */
+
+main{
+  margin: 15px 0px 15px;
+}
+
+.main-left, .main-center, .main-right{
+  float:left;
+}
+
+.main-left{
+  width: 200px;
+  /* debug */
+  background-color: #dd8fea;
+  height: 200px;
+}
+
+.main-center{
+  /* larghezza del blocco è 100% - larghezza blocco destro - margini di 15 a dx e sx - larghezza blocco destra */
+  width: calc(100% - 200px - 30px - 300px);
+  margin: 0 15px;
+  /* debug */
+  background-color: #872198;
+  height: 400px;
+}
+
+.main-right{
+  width: 300px;
+}
+
+/* i due div momentaneamente vuoti della parte destra del blocco. definiranno anche l'altezza del blocco main-right che li contiene */
+
+.main-right div{
+  width: 100%;
+  margin-bottom: 10px;
+  /* debug */
+  height: 150px;
+  background-color: #dd8fea;
+
+}
+
+/* footer */
+
+footer{
+  width: 100%;
+  height: 80px;
+  /* debug */
+  background-color: lightblue;
+}

@@ -28,6 +28,30 @@ header{
 }
 
 /* prima parte dell'header con img e titolo */
+
+/* logo sopra il titolo disegnato con 3 icone montagna disposte e dimensionate con qualche regola css  */
+
+.logo i:first-child{
+  font-size: 20px;
+  position: relative;
+  top: 2px;
+  left: 12px;
+}
+
+.logo i:nth-child(2){
+  font-size: 40px;
+  position: relative;
+  top: 1px;
+}
+
+.logo i:last-child{
+  font-size: 20px;
+  position: relative;
+  top: 2px;
+  right: 12px;
+}
+
+
 .header-img{
   background-image: url(../img/default-header.jpg);
   background-size: cover;
@@ -36,6 +60,7 @@ header{
   height: 350px;
   position: relative;
 }
+
 .header-img .testo{
   font-family: 'Montserrat', sans-serif;
   width: 100%;
@@ -61,6 +86,7 @@ header{
   font-weight: bold;
 }
 
+
 /* seconda parte dell'header - nav */
 
 header > nav *{
@@ -78,6 +104,7 @@ header > nav li{
   padding: 0px 8px;
   font-family: 'Montserrat', sans-serif;
 }
+
 /* sull hover si colora lo sfondo del li e cambia il puntatore */
 header > nav li:hover{
   background-color: rgba(0, 0, 0, .4);
@@ -155,7 +182,7 @@ main{
   width: calc(100% - 200px - 40px - 200px);
   margin: 0 20px;
   background-color: white;
-  padding: 15px 10px;
+  padding: 10px 10px 15px 10px;
   border-radius: 5px;
 }
 
@@ -205,6 +232,7 @@ footer{
   height: 85px;
   background-color: white;
   margin: 15px 0;
+  border-radius: 4px;
 }
 
 .firma{
@@ -216,11 +244,30 @@ footer{
   border-bottom: 1px solid lightgrey;
 }
 
+/* icone social con font awesome che si colorano con l'hover */
+
+
 .facebook, .instagram, .github{
   float: left;
   width: 33%;
   text-align: center;
 }
-.facebook img, .instagram img, .github img{
-  height: 30px;
+.facebook i, .instagram i, .github i{
+  font-size: 25px;
+  color: lightgrey;
+}
+
+.facebook i:hover{
+  color: #3b5998;
+  cursor: pointer;
+}
+
+.instagram i:hover{
+  color:  #C13584;
+  cursor: pointer;
+}
+
+.github i:hover{
+  color: black;
+  cursor: pointer;
 }
